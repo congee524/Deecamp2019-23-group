@@ -32,20 +32,20 @@
 
 在利用Pix2Pix网络生成卡通画时，数据集的规模极大限制了最终的效果，训练不充分导致了下面的问题（这已经是后期比较好的情况）
 
-![train_problem](http://github.com/congee524/Deecamp2019-23-group/raw/master/notes_image/train_problem.png)
+![image](http://github.com/congee524/Deecamp2019-23-group/raw/master/notes_image/train_problem.png)
 
 
 因为数据集比较少，必须要强迫网络在一次训练中学到更多东西，那就要让生成图像和真图的差距Loss的大小更重要一点。所以在生成器的损失函数中，我们又增加了原图和假图在判别器中下采样一次之后的图像的L1 loss，这样对fake picture和ground truth的相似度又增加了一层，能让网络学的更快。
 
 一开始是打算原图经过一次传统意义上的下采样（缩小），再和假图经过判别器一次下采样之后的图做L1 loss的计算，但是发现跨幅太大，也学不起来，还是让原图经过判别器的下采样，修改之后的gen_loss计算公式：
 
-![gen_loss_function](http://github.com/congee524/Deecamp2019-23-group/raw/master/notes_image/gen_loss_function.png)
+![image](http://github.com/congee524/Deecamp2019-23-group/raw/master/notes_image/gen_loss_function.png)
 
 公式这里是经过k次下采样，每次都计算一次，但实际训练中发现效果是差不多的，就取了经过一次下采样之后的L1 loss加上去
 
 这次出来的测试效果就好多了（基础图是Pix2Pix网络的结果，后面是其它队友用CartoonGan做的）：
 
-![test_picture](
+![image](
 http://github.com/congee524/Deecamp2019-23-group/raw/master/notes_image/test_picture.jpg)
 
 
@@ -78,14 +78,14 @@ http://github.com/congee524/Deecamp2019-23-group/raw/master/notes_image/test_pic
 
 `user_pic`中是用户测试的图片，这是一些展示：
 
-![psb (1)](
+![image](
 http://github.com/congee524/Deecamp2019-23-group/raw/master/user_picture/psb1.jpg)
 
-![psb (3)](
+![image](
 http://github.com/congee524/Deecamp2019-23-group/raw/master/user_picture/psb3.jpg)
 
-![psb (4)](
+![image](
 http://github.com/congee524/Deecamp2019-23-group/raw/master/user_picture/psb4.jpg)
 
-![psb (6)](
+![image](
 http://github.com/congee524/Deecamp2019-23-group/raw/master/user_picture/psb5.jpg)
