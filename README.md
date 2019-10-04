@@ -79,13 +79,13 @@ http://github.com/congee524/Deecamp2019-23-group/raw/master/notes_image/test_pic
 `user_pic`中是用户测试的图片，这是一些展示：
 
 ![psb (1)](
-http://github.com/congee524/Deecamp2019-23-group/raw/master/user_picture/psb (1).jpg)
+http://github.com/congee524/Deecamp2019-23-group/raw/master/user_picture/psb1.jpg)
 
 ![psb (3)](
-http://github.com/congee524/Deecamp2019-23-group/raw/master/user_picture/psb (3).jpg)
+http://github.com/congee524/Deecamp2019-23-group/raw/master/user_picture/psb3.jpg)
 
 ![psb (4)](
-http://github.com/congee524/Deecamp2019-23-group/raw/master/user_picture/psb (4).jpg)
+http://github.com/congee524/Deecamp2019-23-group/raw/master/user_picture/psb4.jpg)
 
 ![psb (6)](
-http://github.com/congee524/Deecamp2019-23-group/raw/master/user_picture/psb (6).jpg)
+http://github.com/congee524/Deecamp2019-23-group/raw/master/user_picture/psb5.jpg)
