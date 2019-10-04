@@ -39,7 +39,7 @@
 
 一开始是打算原图经过一次传统意义上的下采样（缩小），再和假图经过判别器一次下采样之后的图做L1 loss的计算，但是发现跨幅太大，也学不起来，还是让原图经过判别器的下采样，修改之后的gen_loss计算公式：
 
-![gen_loss_function](\notes_image\gen_loss_function.png)
+![gen_loss_function](http://github.com/congee524/Deecamp2019-23-group/raw/master/notes_image/gen_loss_function.png)
 
 公式这里是经过k次下采样，每次都计算一次，但实际训练中发现效果是差不多的，就取了经过一次下采样之后的L1 loss加上去
 
